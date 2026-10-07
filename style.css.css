@@ -1,0 +1,148 @@
+ body {
+    margin: 20px;
+    border: 20px solid #666;
+    padding: 24px;
+ }
+
+ .titulo {
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+ .subtitulo {
+    text-align: center;
+    color: rgb(1, 1, 87);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:28px;
+ }
+
+ .titulo_secao {
+    text-align: left;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+ }
+
+ .escrita_rodape_sessao {
+      text-align: left;
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 20px;
+ }
+
+ .titulo_complementar {
+    text-align: left;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+ }
+
+ .rodape {
+    clear: both;
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border-top: 2px solid gray;
+    padding-top: 14px;
+
+ }
+ .conteudo_principal { 
+   width: 50%;
+   float: left;
+   border-right: 2px solid gray;
+   padding-right: 16px;
+   margin-bottom: 20px;
+ }
+
+ .conteudo_complementar {
+   width: 50%;
+   float: right;
+   text-align: justify;
+   padding-left: 16px;
+   margin-bottom: 20px;
+ }
+
+p {
+    text-align: justify;
+}
+
+.fonte_definicao_sessao {
+  text-align: left;
+}
+
+.cabecalho {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr) 160px;
+  align-items: center;
+  gap: 15px;
+}
+
+.cabecalho::after {
+  content: "";
+  grid-column: 3;
+}
+
+.titulo_bloco {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.cibernetico_IV {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.titulo,
+.subtitulo {
+  margin: 0;
+  width: 100%;
+}
+
+*{box-sizing: border-box;}
+
+@media (max-width: 768px) {
+    body {
+    margin: 8px;
+    border-width: 6px;
+    padding: 12px;
+  }
+  .conteudo_principal, .conteudo_complementar {
+    width: 100%;
+    float: none;
+  }
+  .conteudo_principal {
+    border-right: none;
+  }
+  .cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cabecalho::after {
+    display: none;
+  }
+  .cibernetico_IV {
+    width: 120px;
+    height: 120px;
+  }
+  .titulo {
+    font-size: 26px;
+  }
+  .subtitulo {
+    font-size: 22px;
+  }
+}
+
